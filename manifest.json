@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "RedFlagDeals Notifier Beta",
+  "description": "User gets notified of latest ongoing deals",
+  "version": "1.1",
+
+  "permissions": [
+	"storage",
+	"tabs",
+	"alarms",
+  "notifications",
+  "http://forums.redflagdeals.com/*"
+  ],
+
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  
+  "options_page": "options.html",
+
+  "icons": { 
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png" 
+	},
+  "browser_action": {
+    "default_icon": {                    
+			"19": "images/icon48.png",          
+			"38": "images/icon48.png"          
+		},
+	"default_title": "RedFlagDeals Notifier",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootplus.css" rel="stylesheet" media="screen">
+	<title>RFD Notifier Options</title>
+</head>
+<body>
+	<h1>RedFlagDeals Notifier Options</h1>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span10">
+				<p class="lead">RFD Thread Notification Refresh Interval</p>
+			</div>
+			<div class="span2">
+				<select id="time">
+					<option value="1">1 Minute</option>
+					<option value="5">5 Minutes</option>
+					<option value="15">15 Minutes</option>
+					<option value="30">30 Minutes</option>
+					<option value="Never">Never</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<label>
+		<input type="checkbox" id="desktop">
+		Allow Desktop Notification?
+	</label>
+
+		<div id="status"></div>
+		<button id="save">Save</button>
+
+		<script src="js/options.js"></script>
+	</body>
+	</html>
